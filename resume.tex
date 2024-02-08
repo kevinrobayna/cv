@@ -1,0 +1,182 @@
+%-------------------------
+% Resume in Latex
+% Author : Kevin Robayna
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{helvet}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \color{cyan}\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{cyan}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{0pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} #2 & #3
+    \end{tabular*}\vspace{0pt}
+}
+
+% --------Multiple Positions Heading------------
+%\newcommand{\resumeSubSubheading}[2]{
+%    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+%      {\small#1} & {\small #2} \\
+%    \end{tabular*}\vspace{-5pt}
+%}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://kevinrobayna.com/}{\Large Kevin Robayna}} & Email : \href{mailto:cv@kevinrobayna.com}{cv@kevinrobayna.com}\\
+  \href{https://kevinrobayna.com/}{https://kevinrobayna.com} \\
+\end{tabular*}
+
+\section{Summary}
+Engineer with over 8 years of experience in highly distributed systems, I'm very passionate and eager to help with the company's mission to enable features at massive scales. Most of my expertise focuses on building backend systems, but I'm also able to develop frontend or apps.
+\resumeItemListStart
+  \resumeItem{Top Skills}
+    {Java, Relational Databases, Distributed Systems, NoSQL, Cloud Computing}
+\resumeItemListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Senior Software Engineer -- GoCardless}{}{Nov 2021 - Present}
+      \resumeItemListStart
+        \resumeItem{SEPA Indirect}
+          {Successfully led a project to integrate with a new banking partner, resulting in a 100x increase in reliable payment processing by utilizing PostgreSQL's partition tables. Mentored multiple engineers in taking ownership of different milestones.}
+        \resumeItem{Observability}
+          {Established effective alerting processes within the team, providing a safety net for new members and ensuring adherence to set principles.}
+        \resumeItem{Technologies Used}
+        {Ruby, Ruby on Rails, Go, PostgreSQL, Google Cloud, Pub/Sub, Terraform, Kubernetes}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Senior Software Engineer -- Skyscanner}{}{Sep 2019 - Nov 2021}
+      \resumeItemListStart
+         \resumeItem{Identity Platform}
+		 {Worked in Skyscanner's distributed Identity platform making sure that all travellers could store their data.}
+      	\resumeItem{gRPC}
+      	{Implemented a common abstraction for traveller identity (jwt) across all Skyscanner services, collaborating with the production platform tribe to ensure a secure and seamless transition.}
+        \resumeItem{Legacy Auth Server}
+        {Successfully migrated traveller data from legacy auth server to Auth0 without causing disruptions, significantly reducing vulnerability risks for travellers at Skyscanner's scale. }
+        \resumeItem{Bot Protection}
+        {Led the implementation of a bot protection solution, PerimeterX, in web and apps, enhancing security measures to prevent impersonation by potential malicious users.}
+        \resumeItem{Technologies Used}
+        {Java, Python, AWS, AWS Dynamo, AWS Cloudformation, Kubernetes, IAM}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer -- Intuit}{}{Jun 2016 - Sep 2019}
+      \resumeItemListStart
+      	\resumeItem{Global Payroll}
+      	{Developed a global payroll solution enabling employers to efficiently process employee payments worldwide, taking ownership of the entire development process from business logic to the code to deploy the service}
+        \resumeItem{Statutory Calculators}
+          {Led the project to implement different statutory payroll calculations. One example of them was the Pension calculator on the UK}
+        \resumeItem{Technologies Used}
+        {Java, GraphQL, MySQL, AWS, AWS RDS, AWS Lambda, AWS Cloudformation, Terraform, Hibernate, Grails}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Junior Software Engineer -- Metapack Group}{}{Oct 2015 - Jun 2016}
+      \resumeItemListStart
+      	\resumeItem{Carriers Service}
+      	{Developed features within the carrier team following Scrum as Agile methodology, enabling companies to ship their product to their customers.}
+        \resumeItem{Technologies Used}
+        {Java, Oracle Database, Spring Framework}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Intern Software Engineer -- Arte Consultores Tecnológicos}{}{Feb 2015 - May 2015}
+      \resumeItemListStart
+        \resumeItem{Jira Plugin}
+          {Developed a JIRA plugin using Java to integrate the company's VCS server with JIRA so that users could easily know the changes being done in the code to the stories}
+        \resumeItem{Technologies used}
+          {Java, Jenkins, Sonarqube, Artifactory, Git}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {BSc Computer Science,} {University of La Laguna (Tenerife, Spain)} {Sep. 2011 -- Jun. 2015}
+  \resumeSubHeadingListEnd
+
+
+
+
+%-------------------------------------------
+\end{document}
